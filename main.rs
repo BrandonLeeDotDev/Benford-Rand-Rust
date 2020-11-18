@@ -11,19 +11,17 @@ fn main() {
     loop {
         // --------- v Necessary for Algo v --------- //
         fn time(switch: bool) -> u128 {
-            let mut time = 0;
             if switch == true {
-                time = SystemTime::now()
+                SystemTime::now()
                 .duration_since(UNIX_EPOCH)
                 .expect("Before time!")
                 .as_nanos()
             } else {
-                time = SystemTime::now()
+                SystemTime::now()
                 .duration_since(UNIX_EPOCH)
                 .expect("Before time!")
-                .as_millis();
+                .as_millis()
             }
-            time
         }
 
         let start_time = time(true);
