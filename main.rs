@@ -1,7 +1,7 @@
 use std::time::{SystemTime, UNIX_EPOCH};
 extern crate num;
 use num::bigint::BigUint;
-/// This (P)RNG confirms to Benford's law suggesting its not just pseudo random.
+/// This (P)RNG conforms to Benford's law suggesting its not just pseudo random.
 fn main() {
     let mut vec = vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
